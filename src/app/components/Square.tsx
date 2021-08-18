@@ -3,11 +3,13 @@ import React from 'react';
 type SquareProps = {
   value: string;
   onClick: () => void;
-}
+};
 
-function Square(props:SquareProps): JSX.Element {
+function Square(props: SquareProps): JSX.Element {
   return (
-  <button className="square" onClick={() => props.onClick()}>{props.value}</button>
+    <button className="square" onClick={() => props.onClick()}>
+      {props.value}
+    </button>
   );
 }
 
